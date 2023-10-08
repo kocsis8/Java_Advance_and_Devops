@@ -1,17 +1,41 @@
-// Press Shift twice to open the Search Everywhere dialog and type `show whitespaces`,
-// then press Enter. You can now see whitespace characters in your code.
+import model.ImprovedSimCard;
+import model.SimpleSimCard;
+
 public class Main {
     public static void main(String[] args) {
-        // Press Alt+Enter with your caret at the highlighted text to see how
-        // IntelliJ IDEA suggests fixing it.
-        System.out.printf("Hello and welcome!");
+        SimpleSimCard simpleSimCard1 = new SimpleSimCard("1111111111111111111111","1111");
+        SimpleSimCard simpleSimCard2 = new SimpleSimCard("2222222222222222","1111");
+        SimpleSimCard improvedSimCard = new ImprovedSimCard("123123123123123123","1111","88888888");
+//        System.out.println(simpleSimCard1);
+//        System.out.println(simpleSimCard2);
+//        System.out.println(improvedSimCard);
+//
+//        System.out.println("---------------------------------------------------");
+//
+//        simpleSimCard1.enterSim("0000");
+//        simpleSimCard1.enterSim("2222");
+//        simpleSimCard1.enterSim("2222");
+//        simpleSimCard1.enterSim("1111");
+//
+//        simpleSimCard2.enterSim("1111");
+//
+//        System.out.println(simpleSimCard1);
+//        System.out.println(simpleSimCard2);
+//
+//        System.out.println("---------------------------------------------------");
 
-        // Press Shift+F10 or click the green arrow button in the gutter to run the code.
-        for (int i = 1; i <= 5; i++) {
+        improvedSimCard.enterSim("2222");
+        improvedSimCard.enterSim("2222");
+        improvedSimCard.enterSim("2222");
+        improvedSimCard.enterSim("2222");
 
-            // Press Shift+F9 to start debugging your code. We have set one breakpoint
-            // for you, but you can always add more by pressing Ctrl+F8.
-            System.out.println("i = " + i);
-        }
+        System.out.println(improvedSimCard);
+
+        improvedSimCard.enterSim("88888888");
+
+        System.out.println(improvedSimCard);
+
+        improvedSimCard.enterSim("1111");
+
     }
 }
